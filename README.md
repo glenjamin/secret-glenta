@@ -9,12 +9,15 @@ don't get each other.
 How To
 ------
 
-Define an array of people: name, email, \*people_to_avoid
+Copy settings.py.sample, then modify the following settings:
+
+Define an array of people: name, email, [people_to_avoid]
 
     PEOPLE = [
-        ['John Smith', 'john@example.com', 'Mary Smith', 'Fred Smith'],
-        ['Mary Smith', 'mary@example.com', 'John Smith'],
-        ['Fred Jones', 'fred@example.com'],
+        ['Glen 1', 'glen1@example.com', 'Glen 2', 'Glen 3'],
+        ['Glen 2', 'glen2@example.com', 'Glen 1'],
+        ['Glen 3', 'glen3@example.com', ],
+        ['Glen 4', 'glen4@example.com', ],
     ]
 
 Fill out SMTP Settings
